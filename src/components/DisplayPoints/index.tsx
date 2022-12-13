@@ -4,7 +4,7 @@ import { Points } from "../../types";
 const DisplayPoints = (props: {
   name: string
   points: Points,
-}): any => {
+}): JSX.Element => {
   const { name, points: { points, distance} } = props;
 
   return (

@@ -38,11 +38,11 @@ const App = () => {
     return inputIsValid
   };
 
-  const handleChange = (event: any) => {
+  const handleChange = (event: React.ChangeEvent<HTMLInputElement>) => {
     setCoordinates(event.target.value)
   };
 
-  const handleSubmit = (event: any) => {
+  const handleSubmit = (event: React.FormEvent) => {
     event.preventDefault()
     if (validateInput()) {
       // 0,1.234 3,8 4,3 10,13
