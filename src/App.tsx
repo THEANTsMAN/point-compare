@@ -39,8 +39,6 @@ const App = () => {
   };
 
   const handleChange = (event: any) => {
-    console.log("handleChange")
-    console.log(event.target.value)
     setCoordinates(event.target.value)
   };
 

@@ -14,7 +14,6 @@ const DisplayPoints = (props: {
         {points.map((point, idx) => (
           <span key={idx}>{point.map((p) => p.toFixed(1)).join(", ")}</span>
         ))}
-        
       </div>
       <div className="display-distance">Distance: { distance.toFixed(2) }</div>
     </div>
